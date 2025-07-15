@@ -1,7 +1,12 @@
+import image from 'next/image'
+import Header from './Header.js'
+
 export default function HomePage() {
   return (
-    <main className="min-h-screen flex items-center justify-center bg-white">
-      <h1 className="text-4xl font-bold text-yellow">Tailwind works!</h1>
+    <main className=" flex  bg-white">
+     
+
+      <Header />
     </main>
   );
 }
