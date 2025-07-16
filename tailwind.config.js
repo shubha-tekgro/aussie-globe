@@ -16,9 +16,12 @@ module.exports = {
           DEFAULT: '#E60914',
           100: '#FDF2FA',
         },
-        yellow: '#FFAE00',
+        green: '#1AC72E',
+        yellow: '#D59643',
         gray: {
-          DEFAULT: '#666666', 
+          DEFAULT: '#444444', 
+          900: '#222222', 
+          500: '#333333', 
         }
       },
       fontSize: {
