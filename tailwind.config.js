@@ -8,6 +8,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+
         blue: {
           DEFAULT: '#1C5189',
           500: '#3491D1',
@@ -19,7 +20,14 @@ module.exports = {
         yellow: '#FFAE00',
         gray: {
           DEFAULT: '#666666', 
-        }
+        }, 
+        
+        colors: {
+        primaryBlack: '#333333',
+        inputColor: '#EAEAEA',
+      },
+
+
       },
       fontSize: {
         h1: ['40px'],
