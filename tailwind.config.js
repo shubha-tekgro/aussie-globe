@@ -24,22 +24,6 @@ module.exports = {
           500: '#333333', 
         }
       },
-      fontSize: {
-        h1: ['40px'],
-        h2: ['30px'],
-        sub: ['18px'],
-        lg: ['20px'],
-        base: ['16px'],
-        sm: ['14px'],
-        xs: ['12px'],
-        xxs: ['10px']
-      },
-      fontWeight: {
-        light: 300,
-        medium: 500,
-        semibold: 600,
-        bold: 700
-      },
     }
   },
   plugins: []

@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".", 
+    "paths": {
+      "@/*": ["app/*"]
+    },
+    "jsx": "react-jsx",      
+    "checkJs": true,         
+    "allowJs": true           
+  },
+  "include": ["app"]
+}
