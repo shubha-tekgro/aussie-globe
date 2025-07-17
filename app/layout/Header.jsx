@@ -16,7 +16,6 @@ const Header = () => {
           <Image src={LocationIcon} alt="Location" className="w-6 h-6" />
           <span className="whitespace-nowrap">Sydney, AUS</span>
           <Image src={Cebrabian_down2} alt="Arrow" className="w-3" />
-
         </div>
         <div className="flex items-center space-x-2 ml-12">
           <Image src={MailIcon} alt="Mail" className="w-6 h-6" />
@@ -57,7 +56,7 @@ const Header = () => {
         </div>
 
 
-        <div className="absolute text-white top-14 right-36 xl:right-20">
+        <div className="absolute text-white top-14 right-36">
           <button className="bg-red px-6 py-3 rounded mt-3 justify-between items-center gap-1 hidden lg:flex">
             Get a Free Consultation
             <Image src={Cebrabian_right} alt="Arrow" className="h-6 w-6 ml-2" />

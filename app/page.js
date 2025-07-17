@@ -2,7 +2,6 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import Header from './layout/Header';
-import Footer from './layout/Footer';
 import cebrabian from './icons/cebrabian.svg';
 import toggleMenuIcon from './icons/toggleMenu.svg';
 import togglecrossIcon from './icons/cross.svg';
@@ -33,16 +32,11 @@ export default function App() {
     <main className='w-full min-h-screen bg-white relative'>
       <Header />
 
-      <button
-        className='lg:hidden absolute top-14 right-4 z-50 text-black'
-        onClick={() => setMenuOpen(!menuOpen)}
-        aria-label='Toggle menu'
-      >
+      <button className='lg:hidden absolute top-14 right-4 z-50 text-black' onClick={() => setMenuOpen(!menuOpen)}
+        aria-label='Toggle menu' >
         <Image
           src={menuOpen ? togglecrossIcon : toggleMenuIcon}
-          alt='Menu Icon'
-          className='w-6 h-12'
-        />
+            alt='Menu Icon' className='w-6 h-12'/>
       </button>
       <div className='hidden lg:flex text-xl text-black justify-center gap-16 mt-20 xl:-ml-10 xl:gap-10'>
         <MenuItems />
@@ -54,8 +48,6 @@ export default function App() {
         }`}
       >
         <MenuItems />
-
-
       </div>
     </main>
   );
