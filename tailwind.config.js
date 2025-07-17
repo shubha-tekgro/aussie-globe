@@ -12,6 +12,7 @@ module.exports = {
         blue: {
           DEFAULT: '#1C5189',
           500: '#3491D1',
+
         },
         red: {
           DEFAULT: '#E60914',
@@ -42,8 +43,19 @@ module.exports = {
       fontWeight: {
         light: 300,
         medium: 500,
+        bold: 700,
         semibold: 600,
-        bold: 700
+        header: ['Inter', 'sans-serif'],
+
+
+      },
+       screens: {
+
+        sm: '320px',
+        md: '765px',
+        lg: '1024px',
+        xl: '1280px',
+        '2xl': '1536px',
       },
     }
   },
