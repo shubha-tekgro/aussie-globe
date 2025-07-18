@@ -1,17 +1,23 @@
+'use client';
+import { useState } from 'react';
 import Image from 'next/image';
+
 import LocationIcon from '../icons/location.svg';
 import MailIcon from '../icons/mail-info.svg';
 import SearchIcon from '../icons/search.svg';
 import PhoneIcon from '../icons/phone.svg';
 import Logo from '../icons/logo.svg';
 import Cebrabian_right from '../icons/cebrabian_right.svg';
+import searchcross from '../icons/search_cross.svg';
 import Cebrabian_down2 from '../icons/cebrabian_down2.svg';
 
 const Header = () => {
+  const [showMobileSearch, setShowMobileSearch] = useState(false);
+
   return (
     <>
 
-      <nav className=' text-blue ml-64 gap-9 hidden lg:flex py-3 '>
+      <nav className='text-blue ml-64 gap-9 hidden lg:flex py-3'>
         <div className='flex items-center space-x-2'>
           <Image src={LocationIcon} alt='Location' className='w-6 h-6' />
           <span className='whitespace-nowrap'>Sydney, AUS</span>
@@ -37,25 +43,52 @@ const Header = () => {
         </div>
       </div>
 
-      <div className='flex justify-end items-center space-x-2 mr-60 -mt-12'>
-        <div className='w-8 h-8 bg-red-200 mt-2 flex items-center justify-center rounded'>
-          <Image src={PhoneIcon} alt='phone' className='w-6' />
+      <div className='flex justify-center items-center w-full p-2 lg:hidden'>
+        <div className='relative flex items-center w-full justify-center'>
+          {!showMobileSearch && (
+            <button onClick={() => setShowMobileSearch(true)} className='transition-all duration-300 ease-in-out'>
+              <Image src={SearchIcon} alt='Search' className='h-5 w-5 ml-44' />
+            </button>
+          )}
+          <div className={` relative mt-2 w-28 transition-all duration-500 ease-in-out transform ${showMobileSearch ?
+            'translate-x-0 opacity-200' : 'translate-x-20 opacity-0 pointer-events-none'} `}>
+            
+            <input type='text' placeholder='Search' autoFocus={showMobileSearch} className='pl-6 pr-8 py-1 w-full text-sm   
+                    text-blue bg-gray-400 border border-gray-300 rounded-md placeholder-blue focus:outline-none' />
+
+            <span className='absolute left-2 top-1/2 transform -translate-y-1/2'>
+              <Image src={SearchIcon} alt='Search' className='h-4 w-4' />
+            </span>
+            <button onClick={() => setShowMobileSearch(false)} className='absolute right-2 top-1/2 transform -translate-y-1/2' >
+              <Image src={searchcross} alt='Close' className='h-4 w-4' />
+            </button>
+          </div>
         </div>
-        <div className='hidden lg:flex flex-col'>
-          <div className='text-blue-900 font-semibold -m-2 ml-1 mt-1'>Call us</div>
+      </div>
+      <div className='flex justify-end items-center space-x-2 mr-60 -mt-12 whitespace-nowrap hidden lg:flex'>
+        <div className='w-8 h-8 bg-red-200 mt-2 flex items-center justify-center rounded'>
+          <Image src={PhoneIcon} alt='Phone' className='w-6' />
+        </div>
+        <div className='flex flex-col'>
+          <div className='text-blue-900 font-semibold -m-2 ml-1 mt-2'>Call us</div>
           <span className='text-sm text-red font-semibold'>(02) 8592 4713</span>
         </div>
       </div>
+      <div className='flex justify-end items-center space-x-1 text-sm -mt-12 lg:hidden '>
+        <div className='w-6 h-6 bg-red-200 mt-2 flex items-center justify-center rounded'>
+          <Image src={PhoneIcon} alt='phone' className='w-4' />
+        </div>
+       <div className='lg:flex flex-col whitespace-nowrap text-[10px]'>
+          <div className='text-blue-900 font-semibold -m-1 ml-1 mt-2'>Call us</div>
+           <span className=' text-red font-semibold'>(02) 8592 4713</span>
+          </div>
+      </div>
 
       <div className='hidden lg:block border-t opacity-150 my-4 ml-64 mr-24 bg-blue-500 w-[72%]'></div>
-
-
       <nav className='relative w-full'>
-        <div className='block lg:hidden absolute left-2 top-20'>
-          <Image src={Logo} alt='Logo' className='w-24 -mt-16 sm:w-38 h-12 mr-3' />
+        <div className='block lg:hidden fixed left-8 top-8'>
+          <Image src={Logo} alt='Logo' className='w-24 sm:w-36 h-12 mr-3 -mt-6' />
         </div>
-
-
         <div className='absolute text-white top-3 right-60'>
           <button className='bg-red px-6 py-3 rounded justify-between items-center gap-1 hidden lg:flex'>
             Get a Free Consultation
@@ -68,4 +101,3 @@ const Header = () => {
 };
 
 export default Header;
-

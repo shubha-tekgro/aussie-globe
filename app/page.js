@@ -33,7 +33,7 @@ export default function App() {
 
       <Header />
 
-      <button className='lg:hidden absolute top-2 right-4 z-50 text-black' onClick={() => setMenuOpen(!menuOpen)}
+      <button className='lg:hidden absolute top-2 items-start ml-4 z-50 text-black' onClick={() => setMenuOpen(!menuOpen)}
         aria-label='Toggle menu' >
         <Image
           src={menuOpen ? togglecrossIcon : toggleMenuIcon}
