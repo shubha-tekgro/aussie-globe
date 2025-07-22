@@ -2,9 +2,12 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import Header from './layout/Header';
+import Footer from './layout/Footer';
 import cebrabian from './icons/cebrabian.svg';
 import toggleMenuIcon from './icons/toggleMenu.svg';
 import togglecrossIcon from './icons/cross.svg';
+import Cebrabian_right from './icons/cebrabian_right.svg';
+
 
 const MenuItems = () => (
   <>
@@ -36,20 +39,29 @@ export default function App() {
       <button className='lg:hidden absolute top-2 items-start ml-4 z-50 text-black' onClick={() => setMenuOpen(!menuOpen)}
         aria-label='Toggle menu' >
         <Image
-          src={menuOpen ? togglecrossIcon : toggleMenuIcon}
-          alt='Menu Icon' className='w-6 h-12' />
+          src={menuOpen ? togglecrossIcon : toggleMenuIcon} alt='Menu Icon' className='w-5 h-12' />
       </button>
       <div className='hidden text-base text-black font-light justify-start px-6 gap-6 
-      lg:px-32 lg:flex lg:gap-10 mt-10 lg:ml-96 lg:text-sm 2xl:text-xl font-header'>
+      lg:px-32 lg:flex lg:gap-4 mt-10 xl:ml-96 lg:text-sm 2xl:text-xl font-header lg:ml-28'>
         <MenuItems />
       </div>
+<Footer />
 
       <div
-        className={`lg:hidden flex flex-col mt-24 gap-5 px-4 overflow-hidden transition-all duration-500 
+        className={`lg:hidden flex flex-col mt-16 gap-5 px-4 overflow-hidden transition-all duration-500 
                     ease-in-out ${menuOpen ? 'max-h-64 opacity-100' : 'max-h-0 opacity-0'
           }`}
       >
         <MenuItems />
+
+
+          <div className="w-full flex mt-6 justify-center items-center text-white lg:hidden">
+  <button className="w-full max-w-[90%] absolute bg-red px-6 py-2 rounded flex justify-between items-center">
+    Get a Free Consultation
+    <Image src={Cebrabian_right} alt="Arrow" className="h-4 w-4" />
+  </button>
+</div>
+
       </div>
     </main>
   );
