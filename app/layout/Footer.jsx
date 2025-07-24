@@ -48,14 +48,12 @@ export default function Footer() {
           <h2 className='text-sub mb-4 '>New to Aussie Globe?</h2>
           <nav className='flex flex-col gap-2 text-sm text-gray'>
           <Image src={cebrabian_down1} alt='Logo' className='w-4 my-2 hidden ' />
-
             <div>Who We Are</div>
             <div>Who We Offer</div>
             <div>Why Choose Us</div>
             <div>Success Stories</div>
           </nav>
         </div>
-
         <div className='flex flex-col w-full sm:w-auto ml-32'>
           <h2 className='text-sub mb-4 '>Explore Our Services</h2>
           <nav className='flex flex-col gap-2 text-sm text-gray'>
@@ -65,7 +63,6 @@ export default function Footer() {
             <div>Visa Consultation</div>
           </nav>
         </div>
-
         <div className='flex flex-col w-full sm:w-auto ml-32'>
           <h2 className='text-subl mb-4 '>Resources & Support</h2>
           <nav className='flex flex-col gap-2 text-sm text-gray'>
