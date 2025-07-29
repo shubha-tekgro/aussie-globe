@@ -3,7 +3,8 @@ import { useState } from 'react';
 import Image from 'next/image';
 import Header from './layout/Header';
 import Footer from './layout/Footer';
-import Error from './layout/404';
+// import Error from './layout/404';
+import Homepage from './layout/Homepage';
 import cebrabian from './icons/cebrabian.svg';
 import toggleMenuIcon from './icons/toggleMenu.svg';
 import togglecrossIcon from './icons/cross.svg';
@@ -48,7 +49,7 @@ export default function App() {
       lg:px-32 lg:flex lg:gap-4 mt-10 xl:ml-96 lg:text-sm 2xl:text-xl font-header lg:ml-28'>
         <MenuItems />
       </div>
-    <Error />
+    
 
       <div
         className={`lg:hidden flex flex-col mt-16 gap-5 px-4 overflow-hidden transition-all duration-500 
@@ -66,7 +67,8 @@ export default function App() {
   
 </div>
       </div>
-
+<Homepage />
+{/* <Error /> */}
 <Footer />
 
     </main>

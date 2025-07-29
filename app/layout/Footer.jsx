@@ -17,8 +17,8 @@ export default function Footer() {
   const [showExplore, setShowExplore] = useState(false);
   const [showResources, setShowResources] = useState(false);
   return (
-    <section className='mt-96 '>
-      <div className=' 2xl:py-10  2xl:px-8 py-10  bg-gradient-to-b from-blue to-blue-500 text-white 2xl:ml-64 2xl:mr-32'>
+    <section className='mt-8 '>
+      <div className=' 2xl:py-10  2xl:px-8 py-10  bg-gradient-to-b from-blue to-blue-500 text-white 2xl:ml-64 xl:mr-32'>
         <div className='flex flex-col lg:flex-row justify-between items-center gap-8'>
           <div className='flex flex-col ml-4 items-center lg:items-start text-center lg:text-left gap-4  font-semibold'>
         <h2 className='text-xl xl:text-3xl font-bold '>

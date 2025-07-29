@@ -20,7 +20,8 @@ module.exports = {
         },
         yellow: '#FFAE00',
         gray: {
-          DEFAULT: '#666666', 
+          DEFAULT: '#666666',
+              100: '#CCCCCC',                           
         }, 
         
         colors: {
