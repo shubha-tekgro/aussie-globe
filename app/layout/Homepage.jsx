@@ -3,7 +3,6 @@ import cebrabian_right from '../icons/cebrabian_right.svg';
 import Image from 'next/image';
 import wave from '../icons/wave.png';
 import cebrabian_red from '../icons/cebrabian-red.svg';
-
 export default function Homepage() {
     return (
         <div>
@@ -16,8 +15,8 @@ export default function Homepage() {
                     <div className=' text-blue-500 font-bold text-h2 px-4 '>
                         Global Education
                     </div>
-                        <div className=" font-semibold  text-white px-4 text-h2">
-                            Journey in <span className="text-yellow text-h2">Australia</span>
+                        <div className=' font-semibold  text-white px-4 text-h2'>
+                            Journey in <span className='text-yellow text-h2'>Australia</span>
 
                         <div className=' text-white py-2 md:w-[38%] text-xs'>
                             Expert guidance for international education and migration services with personalized support at every step.
@@ -34,7 +33,6 @@ export default function Homepage() {
                     </div>
                 </div>
                 <div className='flex flex-row gap-4 sm:gap-4 w-full sm:w-auto mx-auto px-4 lg:px-12 mb-16'>
-
                     <button className='bg-red hover:bg-red-600 text-white px-6 py-2 rounded flex gap-2 
                         justify-center w-auto md:px-4 md:py-3 text-xs md:text-xs ml-8 '>
                         Why Choose AussieGlobe?
@@ -46,10 +44,6 @@ export default function Homepage() {
                     </button>
                 </div>
             </div>
-           
-
-
-
         </div>
     )
 }
