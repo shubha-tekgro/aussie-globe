@@ -8,7 +8,7 @@ export default function Homepage() {
         <div>
             <div className='bg-gradient-to-l from-blue-500 to-blue xl:ml-64 xl:mr-32 py-12 xl:px-8 mt-8'>
                 <div className='md:ml-16'>
-                    <div className='mt-4 absolute right-0 -mr-28 '>
+                    <div className='mt-60 absolute right-0 '>
                         <Image src={wave} alt='wave' className='mt-4 w-[80%] ml-96 overflow-hidden' />
                     </div>
                     <div className='text-white text-h2 font-semibold mt-12 px-4 '> Begin Your </div>

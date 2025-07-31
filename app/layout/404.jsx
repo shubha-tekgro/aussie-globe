@@ -17,27 +17,27 @@ import cebrabian_red from '../icons/cebrabian-red.svg';
 export default function Error() {
     return (
         <div>
-               <div className='bg-gradient-to-l from-blue-500 to-blue xl:ml-64 xl:mr-32 py-12 xl:px-8 mt-8'>
+               <div className='bg-gradient-to-l from-blue-500 to-blue  py-12 xl:px-8 mt-8'>
                 <div className='md:ml-16'>
-                    <div className='absolute md:mt-20  md:right-40 right-0 -mt-12'>
+                    <div className='absolute md:mt-8  md:right-40 right-0 -mt-12'>
                         <Image src={zig_zag} alt='zig_zag' className='md:w-80 w-48' />
                     </div>
-                    <div className='absolute md:mt-12  md:right-60 right-12 -mt-16'>
+                    <div className='absolute md:mt-2  md:right-60 right-12 -mt-16'>
                         <Image src={finder} alt='finder' className='md:w-48 w-28' />
                     </div>
-                  <div className='absolute md:mt-16  md:right-64 right-12 -mt-16'>
+                  <div className='absolute md:mt-6  md:right-64 right-12 -mt-16'>
                         <Image src={circle} alt='circle' className='md:w-3 w-3' />
                     </div>
-                    <div className='absolute md:mt-28 md:right-56 right-10 mt-2'>
+                    <div className='absolute md:mt-24 md:right-56 right-10 mt-2'>
                         <Image src={circle} alt='circle' className='md:mt-12  md:w-2 w-2' />
                     </div>
-                     <div className='absolute md:mt-36 md:right-56 right-44 -mt-2'>
+                     <div className='absolute md:mt-24 md:right-56 right-44 -mt-2'>
                         <Image src={circle} alt='circle' className='md:mr-56 md:w-2 w-2' />
                     </div>
-                   <div className='absolute md:mt-52 md:right-56 right-40 mt-6'>
+                   <div className='absolute md:mt-40 md:right-56 right-40 mt-6'>
                         <Image src={circle} alt='circle' className='md:mr-52 md:w-3 w-3' />
                     </div>
-                   <div className='absolute md:mt-20 md:right-80 right-40 -mt-12'>
+                   <div className='absolute md:mt-6 md:right-80 right-40 -mt-12'>
                         <Image src={plus} alt='plus' className='md:w-3 md:mr-28' />
                     </div> 
 
@@ -54,7 +54,7 @@ export default function Error() {
                 </div>
                 </div>
             <div className=' mt-20 flex justify-center content-center text-xxs' >
-                <button className=' border-gray-100 border-2 px-4 py-2 rounded-xl gap-2 flex justify-center w-auto xl:ml-64 xl:mr-16'>
+                <button className=' border-gray-100 border-2 px-4 py-2 rounded-xl gap-2 flex justify-center w-auto '>
                     <Image src={circle_right} alt='circle_right' />
                     Leading Australian Education Consultants
                 </button>
@@ -66,7 +66,7 @@ export default function Error() {
                     Expert guidance for your Australian education and migration journey, backed by 15+ years of experience and thousands of success stories.
                 </div>
             </div>
-            <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 xl:ml-64 py-8 xl:px-6 mt-2 bg-gray-100 bg-opacity-50  md:mr-28 justify-center content-center'>
+            <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 py-8 xl:px-6 mt-2 bg-gray-100 bg-opacity-50 justify-center content-center'>
                 <div  className='bg-white px-8 py-4 mr-4 rounded-xl'>
                     <Image src={university} alt='university' />
                     <div className='font-bold text-xs xl:text-xl  hover:text-blue-500'>

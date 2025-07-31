@@ -3,8 +3,8 @@ import { useState } from 'react';
 import Image from 'next/image';
 import Header from './layout/Header';
 import Footer from './layout/Footer';
-import Error from './layout/404';
-// import Homepage from './layout/Homepage';
+// import Error from './layout/404';
+import Contact from './layout/Contact';
 import cebrabian from './icons/cebrabian.svg';
 import toggleMenuIcon from './icons/toggleMenu.svg';
 import togglecrossIcon from './icons/cross.svg';
@@ -54,8 +54,8 @@ export default function App() {
   </button>
 </div>
       </div>
-{/* <Homepage />  */}
- <Error />
+<Contact /> 
+ {/* <Error /> */}
 <Footer />
     </main>
   );
