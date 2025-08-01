@@ -1,8 +1,9 @@
 "use client";
 
-import React, { useState } from "react";
-import { RedCTA } from "@/components/RedCTA";
-import { CircleCheckBig } from "lucide-react";
+import { useState } from "react";
+import { RedCTA } from "@/components/buttons/RedCTA";
+import { CheckCircleIcon } from "@heroicons/react/24/outline";
+
 
 export const ConsultationForm = () => {
   const [formData, setFormData] = useState({
@@ -29,10 +30,10 @@ export const ConsultationForm = () => {
   return (
     <form
       onSubmit={handleSubmit}
-      className="max-w-xl mx-auto bg-white/90 rounded-lg shadow-md overflow-hidden mr-12"
+      className="max-w-xl mx-auto bg-white/90 rounded-lg shadow-md overflow-hidden lg:mr-12"
     >
-      <div className="p-6 space-y-4 text-sm md:text-base text-gray-700">
-        <div className="bg-gradient-to-r from-blue to-blue-500 text-white px-6 py-2 rounded-lg">
+      <div className="p-3 lg:p-6 space-y-4 text-sm md:text-base text-gray-700">
+        <div className="bg-gradient-to-r from-blue to-blue-500 text-white lg:px-6 px-2 py-2 rounded-lg">
           <h2 className="text-2xl font-semibold">Get Your Free Consultation</h2>
           <p className="text-sm text-white/90 font-thin">
             Expert advice tailored to your goals
@@ -139,7 +140,7 @@ export const ConsultationForm = () => {
 
 <div className="flex items-center justify-end gap-1">
   <span className="inline-flex items-center justify-center w-4 h-4 rounded-full bg-green-100 text-green">
-    <CircleCheckBig size={18} />
+    <CheckCircleIcon width={18} height={18} />
   </span>
   <span className="text-gray-600 font-light text-sm">Trusted Partner</span>
 </div>

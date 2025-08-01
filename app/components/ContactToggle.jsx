@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { Phone, MessageCircle, ChevronRight } from 'lucide-react';
+import { PhoneIcon, ChatBubbleLeftEllipsisIcon, ChevronRightIcon } from '@heroicons/react/24/outline';
 
 export const ContactToggle = () => {
   const [isTouchDevice, setIsTouchDevice] = useState(false);
@@ -13,12 +13,12 @@ export const ContactToggle = () => {
     }
   }, []);
 
-  const toggleItem = (item: string) => {
+  const toggleItem = (item) => {
     if (!isTouchDevice) return;
     setExpandedItem((prev) => (prev === item ? null : item));
   };
 
-  const isExpanded = (item: string) =>
+  const isExpanded = (item) =>
     !isTouchDevice || expandedItem === item;
 
   return (
@@ -27,7 +27,7 @@ export const ContactToggle = () => {
         className="flex items-center w-[3.5rem] group-hover:w-[10rem] transition-all duration-300 cursor-pointer px-4 py-3 hover:bg-gray-100"
         onClick={() => toggleItem('call')}
       >
-        <Phone className="text-red shrink-0" size={20} />
+        <PhoneIcon className="text-red shrink-0" width={20} />
         <div
           className={`
             flex items-center justify-between ml-2 overflow-hidden transition-all duration-300
@@ -37,9 +37,9 @@ export const ContactToggle = () => {
           <span className="text-sm font-medium text-gray-800 whitespace-nowrap">
             Call Us
           </span>
-          <ChevronRight
+          <ChevronRightIcon
             className="text-gray-400 shrink-0 ml-2"
-            size={20}
+            width={20}
           />
         </div>
       </div>
@@ -48,7 +48,7 @@ export const ContactToggle = () => {
         className="flex items-center w-[3.5rem] group-hover:w-[10rem] transition-all duration-300 cursor-pointer px-4 py-3 hover:bg-gray-100"
         onClick={() => toggleItem('whatsapp')}
       >
-        <MessageCircle className="text-green shrink-0" size={20} />
+        <ChatBubbleLeftEllipsisIcon className="text-green shrink-0" width={20} />
         <div
           className={`
             flex items-center justify-between ml-2 overflow-hidden transition-all duration-300
@@ -58,9 +58,9 @@ export const ContactToggle = () => {
           <span className="text-sm font-medium text-gray-800 whitespace-nowrap">
             WhatsApp
           </span>
-          <ChevronRight
+          <ChevronRightIcon
             className="text-gray-400 shrink-0 ml-2"
-            size={20}
+            width={20}
           />
         </div>
       </div>
