@@ -4,39 +4,10 @@ import Slider from "react-slick";
 import { Testimonial } from "./Testimonial";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
-const testimonialsData = [
-  {
-    profileImage: "/images/testimonial/img1.jpg",
-    reviewText: "This is the best course for IELTS! Highly Recommended.",
-    userName: "Vincent Luggerius",
-    userRole: "Student",
-    rating: 5,
-  },
-  {
-    profileImage: "/images/testimonial/img2.jpg",
-    reviewText: "The instructor really understands the test strategy.",
-    userName: "Aria Lane",
-    userRole: "Graduate",
-    rating: 4,
-  },
-  {
-    profileImage: "/images/testimonial/img3.jpg",
-    reviewText: "Scored Band 8.5 thanks to this course.",
-    userName: "John Felix",
-    userRole: "Candidate",
-    rating: 5,
-  },
-  {
-    profileImage: "/images/testimonial/img4.jpg",
-    reviewText: "Very easy to follow and well structured.",
-    userName: "Maria Gomez",
-    userRole: "Professional",
-    rating: 5,
-  },
-];
+import data from "@/data/data.json";
 
 export const TestimonialList = () => {
+  const { testimonialsData } = data;
   const settings = {
     dots: true,
     infinite: true,

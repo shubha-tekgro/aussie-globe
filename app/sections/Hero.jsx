@@ -35,7 +35,7 @@ const Hero = ({
   return (
     <section
       aria-labelledby="home-heading"
-      className="relative flex flex-col lg:flex-row items-start justify-between 2xl:justify-center w-full bg-gradient-to-r from-blue to-blue-500 py-12 px-4 lg:px-8 lg:px-16 xl:px-32 2xl:px-52 gap-6 lg:gap-0"
+      className="relative flex flex-col lg:flex-row items-start justify-between xl:justify-center w-full bg-gradient-to-r from-blue to-blue-500 gap-6 lg:gap-0 lg:py-section-lg py-section px-section"
     >
       <div className="w-full text-white md:max-w-xl md:mx-auto lg:mx-0 lg:w-1/2">
         {statusItems && statusItems.length > 0 && (

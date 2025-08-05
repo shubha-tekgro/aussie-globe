@@ -1,12 +1,9 @@
 {
   "compilerOptions": {
-    "baseUrl": ".", 
+    "baseUrl": ".",
     "paths": {
+      "@components/*": ["app/components/*"], 
       "@/*": ["app/*"]
-    },
-    "jsx": "react-jsx",      
-    "checkJs": true,         
-    "allowJs": true           
-  },
-  "include": ["app"]
+    }
+  }
 }

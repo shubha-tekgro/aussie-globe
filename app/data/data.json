@@ -1,0 +1,249 @@
+{
+  "steps": [
+    {
+      "number": 1,
+      "title": "Free Consultation",
+      "description": "Discuss your goals and options with our experts"
+    },
+    {
+      "number": 2,
+      "title": "Personalized Plan",
+      "description": "Get a customized study and visa strategy"
+    },
+    {
+      "number": 3,
+      "title": "Application Support",
+      "description": "We handle your applications and documentation"
+    },
+    {
+      "number": 4,
+      "title": "Visa Success",
+      "description": "Achieve your dreams of studying abroad"
+    }
+  ],
+  "offices": [
+    {
+      "city": "Sydney Office",
+      "flag": null,
+      "phoneNumbers": ["(02) 8592 4713", "0402 575 591"],
+      "address": "Suite 604, Level 6 / 379-383 Pitt Street, Fayworth House, Sydney NSW 2000 Australia",
+      "email": "info@aussieglobe.com.au"
+    },
+    {
+      "city": "🇦🇺 Rockdale Office",
+      "flag": "🇦🇺",
+      "phoneNumbers": ["(02) 8958 9089", "0401 188 281"],
+      "address": "12/10 King St Rockdale NSW 2216 Australia",
+      "email": "info@aussieglobe.com.au"
+    },
+    {
+      "city": "Canberra Office",
+      "flag": null,
+      "phoneNumbers": ["(02) 6156 2625", "0402 290 760"],
+      "address": "9 / 7 Beissel Street, Belconnen, ACT 2617, Australia",
+      "email": "info@aussieglobe.com.au"
+    },
+    {
+      "city": "🇳🇵 Kathmandu Office, Nepal",
+      "flag": "🇳🇵",
+      "phoneNumbers": ["+977-1-4490101", "98510 89751"],
+      "address": "Mid Baneshwor, Kathmandu (Near Global College of Management)",
+      "email": "info@aussieglobe.com.au"
+    }
+  ],
+  "services": [
+    {
+      "icon": "/icons/university.svg",
+      "title": "University Admissions",
+      "description": "Expert guidance for admissions into prestigious Australian universities with high acceptance rates.",
+      "list": [
+        "University Selection",
+        "Application Assistance",
+        "Scholarship Guidance"
+      ],
+      "button": "Explore Australian Universities"
+    },
+    {
+      "icon": "/icons/plane.svg",
+      "title": "Study & Migration Visa",
+      "description": "Expert guidance for admissions into prestigious Australian universities with high acceptance rates.",
+      "list": [
+        "Visa Application Support",
+        "Document Preparation",
+        "Interview Coaching"
+      ],
+      "button": "Explore Visa Options"
+    },
+    {
+      "icon": "/icons/copy.svg",
+      "title": "Test Preparation Courses",
+      "description": "Expert guidance for admissions into prestigious Australian universities with high acceptance rates.",
+      "list": [
+        "Visa Application Support",
+        "Document Preparation",
+        "Interview Coaching"
+      ],
+      "button": "Enroll in Test Prep Courses"
+    },
+    {
+      "icon": "/icons/safeguard.svg",
+      "title": "Health Cover Services",
+      "description": "Expert guidance for admissions into prestigious Australian universities with high acceptance rates.",
+      "list": [
+        "Visa Application Support",
+        "Document Preparation",
+        "Interview Coaching"
+      ],
+      "button": "Get Health Cover Advice"
+    },
+    {
+      "icon": "/icons/writenote.svg",
+      "title": "Professional Year & Skill Assessment",
+      "description": "Expert guidance for admissions into prestigious Australian universities with high acceptance rates.",
+      "list": [
+        "Visa Application Support",
+        "Document Preparation",
+        "Interview Coaching"
+      ],
+      "button": "Advance Your Career"
+    },
+    {
+      "icon": "/icons/graph.svg",
+      "title": "Tax Return & Accounting Services",
+      "description": "Expert guidance for admissions into prestigious Australian universities with high acceptance rates.",
+      "list": [
+        "Visa Application Support",
+        "Document Preparation",
+        "Interview Coaching"
+      ],
+      "button": "Consult Our Tax Experts"
+    }
+  ],
+  "featureList": [
+      "Free consultation with education experts",
+      "Guidance for university admissions",
+      "Tailored visa support services",
+      "Assistance with documentation and SOPs",
+      "Expert counseling for course selection",
+      "Ongoing support throughout your journey"
+    ],
+  "testimonialsData" : [
+    {
+      "profileImage": "/images/testimonial/img1.jpg",
+      "reviewText": "This is the best course for IELTS! Highly Recommended.",
+      "userName": "Vincent Luggerius",
+      "userRole": "Student",
+      "rating": 5
+    },
+    {
+      "profileImage": "/images/testimonial/img2.jpg",
+      "reviewText": "The instructor really understands the test strategy.",
+      "userName": "Aria Lane",
+      "userRole": "Graduate",
+      "rating": 4
+    },
+    {
+      "profileImage": "/images/testimonial/img3.jpg",
+      "reviewText": "Scored Band 8.5 thanks to this course.",
+      "userName": "John Felix",
+      "userRole": "Candidate",
+      "rating": 5
+    },
+    {
+      "profileImage": "/images/testimonial/img4.jpg",
+      "reviewText": "Very easy to follow and well structured.",
+      "userName": "Maria Gomez",
+      "userRole": "Professional",
+      "rating": 5
+    }
+  ],
+  "videos": [
+    "https://www.youtube.com/shorts/fHDUdpC4U-Q",
+    "https://www.youtube.com/shorts/fHDUdpC4U-Q",
+    "https://www.youtube.com/shorts/fHDUdpC4U-Q",
+    "https://www.youtube.com/shorts/fHDUdpC4U-Q",
+    "https://www.youtube.com/shorts/fHDUdpC4U-Q",
+    "https://www.youtube.com/shorts/fHDUdpC4U-Q",
+    "https://www.youtube.com/shorts/fHDUdpC4U-Q",
+    "https://www.youtube.com/shorts/fHDUdpC4U-Q"
+  ],
+  "blogData" : [
+ {
+    "id": 1,
+    "date": "2025-07-15",
+    "image":"https://placehold.co/600x400",
+    "authorImage":"/images/testimonial/img1.jpg",
+    "duration": "5min",
+    "title": "Understanding React Hooks",
+    "description": "Deep dive into useEffect, useState, and custom hooks.",
+    "author": "Jane Doe",
+    "tags": ["react", "hooks", "javascript"]
+  },
+  {
+    "id": 2,
+    "date": "2025-07-10",
+    "image":"https://placehold.co/600x400",
+    "authorImage":"/images/testimonial/img1.jpg",
+    "duration": "7min",
+    "title": "Optimizing Lighthouse Scores",
+    "description": "Performance tips for frontend developers.",
+    "author": "John Smith",
+    "tags": ["performance", "seo", "frontend"]
+  },
+  {
+    "id": 3,
+    "date": "2025-07-05",
+    "image":"https://placehold.co/600x400",
+      "authorImage":"/images/testimonial/img1.jpg",
+    "duration": "6min",
+    "title": "Building Accessible Components",
+    "description": "Best practices for A11y in React.",
+    "author": "Mary Johnson",
+    "tags": ["accessibility", "react", "ui/ux"]
+  }
+  ],
+  "benefits" : [
+  {
+    "icon": "/icons/affordable.svg",
+    "tag": "Saves up to 20%",
+    "title": "Affordable & Competitive",
+    "description":
+      "Top-tier education and migration consulting at lower costs without compromising quality."
+  },
+  {
+    "icon": "/icons/success.svg",
+    "tag": "98% Success Migrations ",
+    "title": "Thousands of Successes",
+    "description":
+      "Proven expertise with high visa approval rates across diverse categories."
+  },
+  {
+    "icon": "/icons/tailored.svg",
+    "tag": "100% Customized",
+    "title": "Tailored Migration Plans",
+    "description":
+      "Personalized strategies designed specifically for your education and migration journey."
+  },
+  {
+    "icon": "/icons/support.svg",
+    "tag": "24/7 Support",
+    "title": "Responsive Support Team",
+    "description":
+      "Dedicated support team available 24/7 prompt, clear answers within 24 hours."
+  },
+  {
+    "icon": "/icons/fast.svg",
+    "tag": "2x Faster",
+    "title": "Faster Visa Processing",
+    "description":
+      "Advanced technology enables faster processing for students and skilled migrants."
+  },
+  {
+    "icon": "/icons/error-free.svg",
+    "tag": "Zero Errors",
+    "title": "Error-Free Applications",
+    "description":
+      "Meticulous review processes ensure your application is complete and error-free."
+  }
+  ]
+}

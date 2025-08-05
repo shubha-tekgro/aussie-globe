@@ -22,7 +22,7 @@ export const ContactToggle = () => {
     !isTouchDevice || expandedItem === item;
 
   return (
-    <div className="absolute bottom-12 right-0 bg-white rounded-l-lg shadow-md overflow-hidden group">
+    <div className="absolute bottom-section-lg right-0 bg-white rounded-l-lg shadow-md overflow-hidden group">
       <div
         className="flex items-center w-[3.5rem] group-hover:w-[10rem] transition-all duration-300 cursor-pointer px-4 py-3 hover:bg-gray-100"
         onClick={() => toggleItem('call')}

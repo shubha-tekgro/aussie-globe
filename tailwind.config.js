@@ -11,6 +11,7 @@ module.exports = {
         blue: {
           DEFAULT: "#1C5189",
           500: "#3491D1",
+          100: "#cae1f1",
         },
         red: {
           DEFAULT: "#E60914",
@@ -27,6 +28,12 @@ module.exports = {
           500: "#333333",
         },
       },
+       spacing: {
+        section: "2rem",      
+        "section-md": "4rem",    
+        "section-lg": "5rem",    
+        "section-2xl": "12rem",    
+      }
     },
   },
   plugins: [],
